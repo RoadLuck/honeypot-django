@@ -10,7 +10,6 @@ from .utils import get_location
 
 class BruteForceLoginView(LoginView):
     template_name = 'admin/login.html'
-    success_url = reverse_lazy('admin:index')
 
     def form_valid(self, form):
         return super().form_valid(form)
