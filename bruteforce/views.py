@@ -59,8 +59,6 @@ def attack_stats(request):
             attack_countries[country_name] = 0
         attack_countries[country_name] += 1
         
-
-
     context = {
         'total_attacks': total_attacks,
         'attack_countries': attack_countries,
