@@ -1,0 +1,15 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <h1>Estadísticas de ataques de fuerza bruta</h1>
+    <p>Total de ataques: {{ total_attacks }}</p>
+    <p>Ataques por pais: </p>
+    <ul>
+        {% for country,count in attack_countries.items %}
+            <li> <p>{{country}}:{{count}}</p></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
