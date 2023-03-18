@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-=d9yvn^(v#n=zdu!9jm#&*rjq)0m2fofm5mnvvi$64#75var_#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.rekniz.com', '51.79.31.153','rekinz.com']
+ALLOWED_HOSTS = ['rekniz.com', 'localhost']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://rekniz.com'
+]
+
 
 
 # Application definition
